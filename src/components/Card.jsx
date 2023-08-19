@@ -1,8 +1,11 @@
 import './Card.css';
-function Card({children}) {
+function Card(props) {
+    const classes= 'card ' + props.className;
     return (
-        <div className="card">
-            {children}
+        <div className={classes}>
+            {props.children}
         </div>
     )
 }
+
+export default Card;

@@ -1,12 +1,13 @@
 import ExpenseItem from "./ExpenseItem";
+import Card from "./Card";
 
 function Expenses({expenses}) {
     return (
-        <div className="expenses">
+        <Card className="expenses">
         {expenses.map(item => (
                 <ExpenseItem date={item.date} title={item.title} amount={item.amount} />
             ))}
-            </div>
+            </Card>
     )
 }
 
