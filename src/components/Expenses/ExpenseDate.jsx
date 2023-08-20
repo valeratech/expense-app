@@ -1,4 +1,4 @@
-import './ExpenseItem.css';
+import './ExpenseDate.css';
 
 function ExpenseDate({date}) {
     return (
