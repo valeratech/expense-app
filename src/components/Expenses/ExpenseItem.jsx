@@ -1,6 +1,6 @@
 import './ExpenseItem.css';
 import './ExpenseDate';
-import Card from "../../shared/Card";
+import Card from "../shared/Card";
 
 import ExpenseDate from "./ExpenseDate";
 

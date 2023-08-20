@@ -1,5 +1,5 @@
 import ExpenseItem from "./ExpenseItem";
-import Card from "../../shared/Card";
+import Card from "../shared/Card";
 
 function Expenses({expenses}) {
     return (
