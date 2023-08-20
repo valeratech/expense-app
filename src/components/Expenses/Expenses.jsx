@@ -1,5 +1,6 @@
 import ExpenseItem from "./ExpenseItem";
 import Card from "../shared/Card";
+import './Expenses.css';
 
 function Expenses({expenses}) {
     return (
