@@ -8,28 +8,41 @@ function ExpenseForm() {
 
     function inputChangeHandler(identifier, value) {
         if (identifier === 'title') {
-            console.log(value);
+            setTitle(value);
         } else if (identifier === 'amount') {
-            console.log(value);
+            setAmount(value);
         } else if (identifier === 'date') {
-            console.log(value);
+            setDate(value);
         }
     }
 
+    function submitHandler(e) {
+        e.preventDefault();
+        const expenseData = {
+            title,
+            amount,
+            date: new Date(date)
+        };
+        console.log(expenseData);
+        setTitle('');
+        setAmount('');
+        setDate('');
+    }
+
     return (
-        <form>
+        <form onSubmit={submitHandler}>
             <div className='new-expense__controls'>
                 <div className='new-expense__control'>
                     <label>Title</label>
-                    <input type='text' onChange={(e) => inputChangeHandler('title', e.target.value)}/>
+                    <input type='text' value={title} onChange={(e) => inputChangeHandler('title', e.target.value)}/>
                 </div>
                 <div className='new-expense__control'>
                     <label>Amount</label>
-                    <input type='number' min='0.01' step='0.01' onChange={(e) => inputChangeHandler('amount', e.target.value)}/>
+                    <input type='number' min='0.01' step='0.01'  value={amount} onChange={(e) => inputChangeHandler('amount', e.target.value)}/>
                 </div>
                 <div className='new-expense__control'>
                     <label>Date</label>
-                    <input type='date' onChange={(e) => inputChangeHandler('date', e.target.value)}/>
+                    <input type='date'  value={date} onChange={(e) => inputChangeHandler('date', e.target.value)}/>
                 </div>
             </div>
             <div clasName='new-expense__actions'>
