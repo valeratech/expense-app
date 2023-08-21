@@ -1,5 +1,6 @@
 import ExpenseForm from "./ExpenseForm";
 import Card from "../shared/Card";
+import './NewExpense.css';
 
 function NewExpense() {
     return (
@@ -8,3 +9,5 @@ function NewExpense() {
         </Card>
     )
 }
+
+export default NewExpense;
