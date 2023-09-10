@@ -33,15 +33,15 @@ function ExpenseForm() {
         <form onSubmit={submitHandler}>
             <div className='new-expense__controls'>
                 <div className='new-expense__control'>
-                    <label>Title</label>
+                    <label htmlFor="title">Title</label>
                     <input type='text' value={title} onChange={(e) => inputChangeHandler('title', e.target.value)}/>
                 </div>
                 <div className='new-expense__control'>
-                    <label>Amount</label>
+                    <label htmlFor="amount">Amount</label>
                     <input type='number' min='0.01' step='0.01'  value={amount} onChange={(e) => inputChangeHandler('amount', e.target.value)}/>
                 </div>
                 <div className='new-expense__control'>
-                    <label>Date</label>
+                    <label htmlFor="date">Date</label>
                     <input type='date'  value={date} onChange={(e) => inputChangeHandler('date', e.target.value)}/>
                 </div>
             </div>
