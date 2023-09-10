@@ -6,7 +6,7 @@ function Expenses(props) {
     return (
         <Card className="expenses">
         {props.expenseData.map(item => (
-                <ExpenseItem date={item.date} title={item.title} amount={item.amount} />
+                <ExpenseItem key={item.id} item={item}/>
             ))}
             </Card>
     )
