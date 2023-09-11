@@ -2,10 +2,10 @@ import React from 'react';
 
 import './ExpensesFilter.css';
 
-const ExpensesFilter = () => {
+function ExpensesFilter(props) {
 
     function changeYearHandler(e) {
-        console.log(e.target.value);
+        props.onFilterYear(e.target.value);
     }
 
     return (
