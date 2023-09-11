@@ -18,12 +18,13 @@ function ExpenseForm() {
 
     function submitHandler(e) {
         e.preventDefault();
-        const expenseData = {
+        const newExpenseItem = {
             title,
             amount,
             date: new Date(date)
         };
-        console.log(expenseData);
+
+        console.log(newExpenseItem);
         setTitle('');
         setAmount('');
         setDate('');
