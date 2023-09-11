@@ -2,10 +2,10 @@ import ExpenseForm from "./ExpenseForm";
 import Card from "../shared/Card";
 import './NewExpense.css';
 
-function NewExpense() {
+function NewExpense(props) {
     return (
         <Card className="new-expense">
-            <ExpenseForm />
+            <ExpenseForm onUpdateExpenseItems={props.onUpdateExpenseItems} />
         </Card>
     )
 }

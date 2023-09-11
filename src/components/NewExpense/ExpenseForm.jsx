@@ -1,7 +1,7 @@
 import './ExpenseForm.css'
 import {useState} from "react";
 
-function ExpenseForm() {
+function ExpenseForm(props) {
     const [title, setTitle] = useState('');
     const [amount, setAmount] = useState('');
     const [date, setDate] = useState('');
@@ -19,12 +19,14 @@ function ExpenseForm() {
     function submitHandler(e) {
         e.preventDefault();
         const newExpenseItem = {
+            id: Math.random().toString(),
             title,
             amount,
             date: new Date(date)
         };
-
         console.log(newExpenseItem);
+        props.onUpdateExpenseItems(newExpenseItem);
+
         setTitle('');
         setAmount('');
         setDate('');
