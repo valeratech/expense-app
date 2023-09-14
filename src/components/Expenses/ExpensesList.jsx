@@ -7,11 +7,11 @@ function ExpensesList(props) {
     }
 
     return (
-        <>
+        <div>
             {props.onExpenseData.map(item => (
                 <ExpenseItem key={item.id} item={item}/>
             ))}
-        </>
+        </div>
     )
 }
 

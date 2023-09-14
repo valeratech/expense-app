@@ -14,7 +14,6 @@ function Expenses(props) {
 
     function filterYearHandler(year) {
         setYear(year);
-        console.log(year);
     }
 
     return (
