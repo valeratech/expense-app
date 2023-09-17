@@ -19,6 +19,7 @@ function Expenses(props) {
     return (
         <Card className="expenses">
             <ExpensesFilter selected={year} onFilterYear={filterYearHandler} />
+
             <ExpensesList onExpenseData={filteredItems}/>
         </Card>
     )

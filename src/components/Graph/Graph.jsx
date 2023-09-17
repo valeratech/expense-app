@@ -1,7 +1,7 @@
 import GraphBar from './GraphBar';
 import './Graph.css';
 
-function Graph (props) {
+function Graph(props) {
 
     return (
         <div className='graph'>
