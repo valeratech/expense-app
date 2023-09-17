@@ -17,7 +17,7 @@ function GraphBar(props) {
                 <div
                     // The graph-bar__fill div displays and visibly fills the graph-bar__inner container by percentage
                     className='graph-bar__fill'
-                    style={{ height: 100% }}
+                    style={{ height: fillGraphBar }}
                 ></div>
             </div>
             {/*The label represents the caption for each month that displays under each bar*/}
