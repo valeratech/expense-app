@@ -1,0 +1,12 @@
+.header-container {
+    background: linear-gradient(135deg, #4774CB 60%, #879FD5);;
+    color: #f6f8fb;
+}
+
+
+
+.main-header {
+    margin: 0;
+    padding: 10px 20px;
+    font-style: italic;
+}

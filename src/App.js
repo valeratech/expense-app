@@ -1,6 +1,7 @@
 import Expenses from "./components/Expenses/Expenses";
 import expenses from "./data/ExpenseArray";
 import NewExpense from "./components/NewExpense/NewExpense";
+import Header from "./components/Header/Header";
 import {useState} from "react";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
 
     return (
         <div>
+            <Header />
             <Expenses expenseData={expenseItems} />
             <NewExpense onUpdateExpenseItems={updateExpenseItems} />
         </div>
