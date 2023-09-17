@@ -1,4 +1,4 @@
-import './GraphBar.css'
+import './GraphBar.css';
 
 function GraphBar(props) {
     // The fillGraphBar variable will be passed as a (style) 'height: percentage' filling a div container for each month
@@ -9,7 +9,7 @@ function GraphBar(props) {
     if (props.maxValue > 0) {
         fillGraphBar = Math.round((props.value / props.maxValue) * 100) + '%';
     }
-
+    console.log(fillGraphBar)
     return (
         <div className='graph-bar'>
             {/*The graph-bar__inner div acts as the container for the actual bar for each month */}

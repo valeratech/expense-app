@@ -1,4 +1,4 @@
-import Graph from './Graph';
+import Graph from "./Graph";
 
 function ExpensesGraph(props) {
     // create an array of labels/values which will be poplulated by iterating props.expenseData in the for loop below

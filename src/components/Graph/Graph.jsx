@@ -8,6 +8,7 @@ function Graph (props) {
     // The "total" variable (max value) represents the sum of ALL values filtered for the given Month
     // The "total" variable will be used to set the ceiling for each bar. The (total/maxValue) = 100% of the bar
     const total = Math.max(...values);
+    console.log(props.graphData)
 
     return (
         <div className='graph'>
