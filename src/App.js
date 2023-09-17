@@ -14,8 +14,8 @@ function App() {
 
     return (
         <div>
-            <NewExpense onUpdateExpenseItems={updateExpenseItems} />
             <Expenses expenseData={expenseItems} />
+            <NewExpense onUpdateExpenseItems={updateExpenseItems} />
         </div>
       );
 }
