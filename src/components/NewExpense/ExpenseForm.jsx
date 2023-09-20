@@ -32,7 +32,7 @@ function ExpenseForm(props) {
         const newExpense = {
             id: Math.random().toString(),
             title,
-            amount,
+            amount: +amount,
             date: new Date(date),
         }
 
